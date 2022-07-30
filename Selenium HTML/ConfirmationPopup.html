@@ -1,0 +1,26 @@
+<html>
+<body>
+<h1>The Window Object</h1>
+<h2>The Confirm() Method</h2>
+<p>Click The button to see line-breaks in a confirm box.</P>
+<button onclick='myFunction()'>I LOVE YOU</button>
+<p id="demo"></p>
+
+<script>
+function myFunction() 
+{
+let text = "Will You Marry Me???";
+if(confirm(text) == true) 
+{
+text = "You Pressed OK! Awww, Choo Chweet, Love U 2 Baby";
+}
+else
+{
+text = "You Pressed Cancel! Get Lost Dabba Fellow";
+}
+document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

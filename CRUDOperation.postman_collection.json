@@ -1,0 +1,312 @@
+{
+	"info": {
+		"_postman_id": "ef044b26-081e-4572-8585-f9fbc16808c0",
+		"name": "CRUDOperation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateAproject",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"createdBy\": \"SRIKANTH\",\r\n  \"projectName\": \"MS_Test\",\r\n  \"status\": \"On Going\",\r\n  \"teamSize\": 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/addProject",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"addProject"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GettingTheProject",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8084/projects",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"projects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSingleProject",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/projects/TY_PROJ_001",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"projects",
+						"TY_PROJ_001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateAProject",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"createdBy\": \"Srikanth123\",\r\n  \"projectName\": \"MS_TESTING\",\r\n  \"status\": \"On Going\",\r\n  \"teamSize\": 9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/addProject",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"addProject"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatingTheProject",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"createdBy\": \"SRI KANTH\",\r\n  \"projectName\": \"MT_TEST\",\r\n  \"status\": \"Completed\",\r\n  \"teamSize\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/projects/TY_PROJ_001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"projects",
+						"TY_PROJ_001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PatchTheProject",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"createdBy\": \"SRIKANTH\",\r\n  \"projectName\": \"MS-TEST\",\r\n  \"status\": \"string\",\r\n  \"teamSize\": 9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/projects/TY_PROJ_001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"projects",
+						"TY_PROJ_001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteAProject",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/projects/TY_PROJ_002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"projects",
+						"TY_PROJ_002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PartialUpdate",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Emorpheus\",\r\n    \"job\": \"zion resident\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://reqres.in/api/user/2",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateAProjectWithEnv",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"createdBy\": \"Kohli\",\r\n  \"projectName\": \"VK_TESTING\",\r\n  \"status\": \"On Going\",\r\n  \"teamSize\": 11\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/addProject",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"addProject"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTheProjectWithEnv",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/projects",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"projects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSingleProjectWithEnv",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProjectWithEnv",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"createdBy\": \"VIRAT\",\r\n  \"projectName\": \"K-TEST\",\r\n  \"status\": \"Completed\",\r\n  \"teamSize\": 11\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/projects/TY_PROJ_005",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"projects",
+						"TY_PROJ_005"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteAProjectWithEnv",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/projects/TY_PROJ_005",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"projects",
+						"TY_PROJ_005"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
